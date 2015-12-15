@@ -57,6 +57,9 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags $(incallui_dir)/proguard.flags
 # This is required for building an unbundled app.
 #LOCAL_SDK_VERSION := current
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 # Use the following include to make our test apk.
